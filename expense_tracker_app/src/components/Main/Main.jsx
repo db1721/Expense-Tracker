@@ -16,7 +16,7 @@ const Main = () => {
                 <Typography variant="subtitle1" style={{ lineHeight: '1.5em', marginTop: '20px' }}>Total balance $100</Typography>
                 {/* Info Card */}
                 Try saying: add income for $100 in category salary for Monday
-                <Divider/>
+                <Divider className={classes.divider} />
                 <Form />
             </CardContent>
             <CardContent className={classes.cardContent}>
