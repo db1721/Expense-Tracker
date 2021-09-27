@@ -73,6 +73,7 @@ const Form = () => {
 
     return (
         <Grid container spacing={2}>
+        <CustomizedSnackBar open = {open}/>
             <Grid item xs={12}>
                 <Typography align="center" variant="subtitle2" gutterBottom>
                     {segment && segment.words.map((w) => w.value).join(' ')}

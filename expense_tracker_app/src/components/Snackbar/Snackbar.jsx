@@ -4,14 +4,20 @@ import MuiAlert from '@material-ui/lab/Alert';
 
 import useStyles from './styles';
 
-const CustomizedSnackbackr = () => {
+const CustomizedSnackbar = ({ open, setOpen }) => {
     const classes = useStyles();
+    const handleClose = (reason) => {
+        if(reason === 'clickAway') return;
 
+        setOpen(false);
+    }
     return (
         <div className={classes.root}>
-            <Snackbar>
-                anchorOrigin={{ vertical: 'top', horizontal: 'right' }} 
-                open={open} autoHideDuration={6000} onClose={handleClose}>
+            <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'right' }} 
+                    open={open} 
+                    autoHideDuration={6000} 
+                    onClose={handleClose}>
+
                 <MuiAlert onClose={handleClose} severity="success" elevation={6} variant="filled">
                     Transaction successfully created.
                 </MuiAlert>
