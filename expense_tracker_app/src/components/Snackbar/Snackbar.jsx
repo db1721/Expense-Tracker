@@ -26,4 +26,5 @@ const CustomizedSnackbar = ({ open, setOpen }) => {
     )
 }
 
-export default Snackbar
+export default CustomizedSnackbar;
+

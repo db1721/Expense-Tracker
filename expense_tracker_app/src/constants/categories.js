@@ -10,7 +10,7 @@ export const incomeCategories = [
     { type: 'Gifts', amount: 0, color: incomeColors[5] },
     { type: 'Salary', amount: 0, color: incomeColors[6] },
     { type: 'Savings', amount: 0, color: incomeColors[7] },
-    { type: 'Rental income', amount: 0, color: incomeColors[8] },
+    { type: 'Rental Income', amount: 0, color: incomeColors[8] },
 ];
 
 export const expenseCategories = [

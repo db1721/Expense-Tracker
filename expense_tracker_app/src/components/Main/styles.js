@@ -4,6 +4,7 @@ export default makeStyles((theme) => ({
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
+    alignItems: "center",
   },
   expand: {
     transform: 'rotate(0deg)',
